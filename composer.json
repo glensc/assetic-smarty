@@ -1,11 +1,9 @@
 {
     "name": "pjparra/assetic-smarty",
     "license": "MIT",
-    "minimum-stability": "dev",
     "description": "Assetic plugin for Smarty",
     "keywords": [ "assets", "compression", "minification", "smarty", "assetic", "php" ],
     "homepage": "https://github.com/pjparra/assetic-smarty",
-    "type": "library",
     "authors": [
         {
             "name": "Pierre-Jean Parra",
@@ -13,8 +11,13 @@
             "homepage": "http://blog.pierrejeanparra.com/"
         }
     ],
+    "autoload": {
+        "files": [
+            "Smarty/block.assetic.php"
+        ]
+    },
     "require": {
-        "php": ">=5.3.1"
+        "php": "^5.3.1 || ^7.0"
     },
     "suggest": {
         "smarty/smarty": "assetic-smarty provides the integration with Smarty.",
